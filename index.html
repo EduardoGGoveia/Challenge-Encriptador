@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Inserindo a fonte para o header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <title>De-code-ficando</title>
 </head>
 <body>
-    <header>
-        <img>
-    </header>
-    <div class="input">
-        <textarea></textarea>
-        <button id="encrypt">Criptografar</button>
-        <button id="decrypt">Desencriptografar</button>
+    <header class="box-header">
+        <h1>
+            <img> De_<em>code</em>_ficando
+        </h1><p>Challenge</p>
+    </header><!-- Cabeçalho -->
+    <div class="content"><!-- div container -->
+        <div class="input"><!-- div de entrada de dados -->
+            <textarea required placeholder="Insira a mensagem criptografada"></textarea>
+            <button class="button" id="encrypt">Criptografar</button>
+            <button class="button" id="decrypt">Desencriptografar</button>
+        </div><div class="output"><!-- div de saída de dados -->
+            <p>Nada foi descriptografado ainda.</p>
+            <button class="button" id="copy">Copiar</button>
+        </div>
     </div>
-    <div class="output">
-        <p>Nada foi descriptografado ainda.</p>
-        <button id="copy">Copiar</button>
-    </div>
-
     <div class="footer">
 
     </div>

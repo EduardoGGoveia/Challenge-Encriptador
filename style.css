@@ -1,21 +1,133 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body { /* Configuração básica do body */
+    font-family: 'Courier Prime', monospace;
+    background: #484450;
 }
 
+/* Configuração do cabeçalho */
+.box-header {
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    font-style: italic;
+    background: #35313b;
+}
 
+.box-header h1 {
+    color: #34baab;
+    position: absolute;
+    margin: 1.2em 0 1em 4em;
+}
+
+.box-header h1 em {
+    color: #ff1457;
+    background: #484450;
+}
+
+.box-header h1 em::after {
+    content:"|";
+    font-weight: 300;
+    color: #dee7e7;
+    font-size: 30px;
+    font-style: normal;
+    animation: animate 800ms linear infinite;/* Animação do cabeçalho */
+}
+
+@keyframes animate {/* configuração da animação do cabeçalho */
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.box-header p {
+    position: absolute;
+    margin: 2.2em 0 0 11.5em;
+    color: #d0b344;
+}
+
+/* Configuração do conteúdo */
+.content {
+    display: block;
+    width: 100%;
+}
+
+/* Configuração da área de entrada de dados */
 .input {
     display: inline-block;
     width: 60%;
     height: 500px;
+    margin: 0 1em 1em 7em;
+    box-sizing: border-box;
+    padding: 0.5em 1em 1em;
+    vertical-align: top;
+    text-align: center;
 }
 
 .input textarea {
     width: 100%;
-    height: 80%;
+    height: 90%;
+    resize: none;
+    background: #1e1e1e;
+    color: #408039;
+    font-size: 20px;
+    border: 4px solid #613c4c;
+    border-radius: 10px;
 }
 
+/* Configuração da área de entrada de dados */
 .output {
     display: inline-block;
     width: 30%;
-    height: 944;
+    height: 580px;
+    margin: 0.5em 0 0 0;
+    padding: 0 6em 0 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.output p {
+    width: 100%;
+    height: 90%;
+    background: #1e1e1e;
+    color: #C0C0C0;
+    font-size: 18px;
+    word-wrap: break-word;
+    border: 4px solid #613c4c;
+    padding: 1em 0 0 0;
+    border-radius: 10px;
+}
+
+.output p img {
+    width: 70%;
+    display: block;
+    position: relative;
+    margin: 50px 30px 0 50px;
+}
+
+/* Configuração dos botões da página */
+.button {
+    font-size: 18px;
+    width: 190px;
+    color: #dee7e7;
+    margin: 0.5em 0;
+    padding: 5px;
+    border: 2px solid #35313b;
+    background: #ff1457;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.input > .button {
+    margin-right: 1em;
+}
+
+.button:hover {
+    color: #ff1457;
+    background: #dee7e7;
 }
