@@ -103,13 +103,6 @@ body { /* Configuração básica do body */
     border-radius: 10px;
 }
 
-.output p img {
-    width: 70%;
-    display: block;
-    position: relative;
-    margin: 50px 30px 0 50px;
-}
-
 /* Configuração dos botões da página */
 .button {
     font-size: 18px;
@@ -130,4 +123,69 @@ body { /* Configuração básica do body */
 .button:hover {
     color: #ff1457;
     background: #dee7e7;
+}
+
+/* Configurando para telas menores */
+/* telas de 765px a 1279px de largura */
+@media  screen and (min-width: 765px) and (max-width: 1279px) {
+    /* Conteúdo */
+    /* Área de entrada de dados */
+    .input {
+        margin: 0 1em 1em 9em;
+        height: 400px;
+    }
+
+    .input > .button {
+        margin-right: 0;
+    }
+
+    /* Área de saída de dados */
+    .output {
+        width: 60%;
+        margin: 0.5em 0 0 11em;
+        height: 300px;
+    }
+
+}
+
+/* Para telas até 764px de largura */
+@media screen and (max-width: 764px) {
+    /* Cabeçalho */
+    .box-header {
+        width: auto;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .box-header h1 {
+        margin: 1em auto 1em 0.5em;
+    }
+
+    .box-header p {
+        margin: 2.5em auto 1em 3em;
+    }
+
+    /* Área de entrada de dados */
+    .input {
+        margin: 1em auto 1em 3.2em;
+        padding: 0;
+        height: 200px;
+    }
+
+    /* Área de saída de dados */
+    .output {
+        width: calc(60% + 1.5%);
+        padding: 0;
+        margin: 5em auto 1em 3.2em;
+        height: 150px;
+    }
+
+    .output > .button {
+        margin: 0.5em 1em auto 0.9em;
+    }
+
+    .button {
+        width: 150px;
+        margin: 0.5em auto 0.5em 0.8em;
+    }
 }
