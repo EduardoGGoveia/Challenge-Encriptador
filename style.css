@@ -125,6 +125,25 @@ body { /* Configuração básica do body */
     background: #dee7e7;
 }
 
+/* Configurando o rodapé da página */
+.footer {
+    width: 100%;
+    height: 100px;
+    margin: 1.5em auto 0;
+    background: url("images/imagem-rodape.jpg");
+    color: #C0C0C0;
+    text-align: center;
+}
+
+.footer p {
+    padding: 1em 0 0 0;
+}
+
+.footer a img {
+    width: 50px;
+    margin: 0.2em auto;
+}
+
 /* Configurando para telas menores */
 /* telas de 765px a 1279px de largura */
 @media  screen and (min-width: 765px) and (max-width: 1279px) {
@@ -158,11 +177,11 @@ body { /* Configuração básica do body */
     }
 
     .box-header h1 {
-        margin: 1em auto 1em 0.5em;
+        margin: 2em auto 1em 0.5em;
     }
 
     .box-header p {
-        margin: 2.5em auto 1em 3em;
+        margin: 3.3em auto 1em 3em;
     }
 
     /* Área de entrada de dados */
