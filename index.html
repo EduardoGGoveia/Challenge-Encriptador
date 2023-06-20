@@ -21,11 +21,11 @@
     <div class="content"><!-- div container -->
         <div class="input"><!-- div de entrada de dados -->
             <textarea required placeholder="Insira a mensagem para criptografar ou descriptografar"></textarea>
-            <button class="button" id="encrypt">Criptografar</button>
-            <button class="button" id="decrypt">Descriptografar</button>
+            <button class="button" onclick="criptografar()">Criptografar</button>
+            <button class="button" onclick="descriptografar()">Descriptografar</button>
         </div><div class="output"><!-- div de saída de dados -->
-            <p>Nada foi descriptografado ainda.</p>
-            <button class="button" id="copy">Copiar</button>
+            <p id="textOut">Nada foi descriptografado ainda.</p>
+            <button class="button" id="copy" onclick="copiando()">Copiar</button>
         </div>
     </div>
     <div class="footer">
@@ -33,5 +33,6 @@
         <a href="https://www.linkedin.com/in/eduardo-guilherme-goveia" target="_blank"><img src="images/LinkedIn-colorido.png" alt="Meu perfil LinkedIn"></a>
         <a href="https://github.com/EduardoGGoveia" target="_blank"><img src="images/github-mark-white.png" alt="Meu perfil GitHub"></a>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>

@@ -114,6 +114,7 @@ body { /* Configuração básica do body */
     background: #ff1457;
     border-radius: 10px;
     transition: 500ms;
+    cursor: pointer;
 }
 
 .input > .button {
