@@ -110,6 +110,9 @@ body { /* Configuração básica do body */
 
 /* Configuração dos botões da página */
 .button {
+    display: inline-block;
+    position: relative;
+    z-index: 1000; /*Junto com o `position`, essa propriedade faz com que os botões fiquem acima dos outros elementos, ignorando o margin entre as divs*/
     font-size: 18px;
     width: 190px;
     color: #dee7e7;
@@ -190,7 +193,7 @@ body { /* Configuração básica do body */
 
     .button {
         width: 150px;
-        margin: 0.5em auto 0.5em 0.8em;
+        margin: 0.5em auto 0.5em 1.5em;
     }
 }
 
